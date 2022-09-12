@@ -18,7 +18,7 @@ const Header = ({title}) => {
         <h1>{window.innerWidth < 768 && <i onClick={toggleSidebar}><FontAwesomeIcon icon={faBars} /></i>}<span style={{marginLeft: "10px"}}>{title}</span></h1>
         <Link to="/profile">
           <div className='img-profile'>
-              <img onClick={() => setIsOpen(!isOpen)} className='img_logo' src={profilePic} alt="profile" />
+              <img onClick={() => setIsOpen(false)} className='img_logo' src={profilePic} alt="profile" />
               {window.innerWidth > 768 && <h3>Ayanlakin</h3>}
           </div>
         </Link>
