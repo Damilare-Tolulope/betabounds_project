@@ -1,0 +1,49 @@
+.img_funder{
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+.funders{
+
+    
+    .funders_grid{
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+
+        .funder{
+            cursor: pointer;
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 12px rgba(0,0,0,0.4);
+
+
+            .funder_head{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                img{
+                    margin-right: 40px;
+                }
+            }
+
+            table {
+                width: 100%;
+
+                tr td{
+                    padding-bottom: 10px;
+                    font-size: 12px;
+
+                    &:nth-child(1){
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+}

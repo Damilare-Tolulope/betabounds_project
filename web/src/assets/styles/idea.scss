@@ -1,0 +1,62 @@
+.ideapool{
+    width: 60%;
+    margin: auto;
+    
+    h2{
+        text-align: center;
+    }
+
+    form{
+        margin-top: 50px;
+        
+        input[type="submit"] {
+            width: 200px;
+            margin: auto;
+            cursor: pointer;
+            background-color: #56cc56;
+            color: #fff;
+            border:none;
+            transition: all 0.3s linear;
+            
+            &:hover{
+                transition: all 0.3s linear;
+                background-color: rgb(86, 204, 86);
+                box-shadow: 1px 1px 13px rgb(149, 147, 147);
+            }
+        }
+        div{
+            margin: 10px 0 20px;
+            
+            label{
+                font-size: 14px;
+                display: block;
+                margin-bottom: 10px;
+            }
+            input[type="file"] {
+                cursor: pointer;
+            }
+
+            textarea {
+                width: 100%;
+                border: 1px solid;
+                height: 200px;
+                outline: none;
+                padding: 10px 15px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+    .ideapool{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 767px) {
+    .ideapool{
+        width: 80%;
+        margin: auto;
+    }
+}
