@@ -7,7 +7,7 @@ import Security from './components/Security'
 const Profile = () => {
   return (
     <div className='profile'>
-      <ProfileSideBar />
+      {window.innerWidth > 768 && <ProfileSideBar />}
       <div>
         {
           (window.location.pathname === "/profile") ?

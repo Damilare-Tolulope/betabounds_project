@@ -128,6 +128,12 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .dashboard{
+    
+        .dashboard_main{
+            padding: 0px;
+        }    
+    }    
     .members_tab{
         display: none;
     }

@@ -3,9 +3,14 @@
     background-color: #1c1b27;
     position: relative;
     padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+    img{
+        height: 500px;
+    }
     div{
-        padding-top: 15%;
         
         p{
             color: #fff;
@@ -103,6 +108,12 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1139px) {
+    .cover{
+
+        img{
+            height: 300px;
+        }
+    }
     .auth{
         justify-content: center;
         flex-direction: column;
@@ -119,6 +130,39 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .cover{
+        flex-direction: column-reverse;
+        padding: 0;
+        justify-content: center;
+
+        div{
+            margin-top: 50px;
+            text-align: center;
+        
+            p{
+                color: #fff;
+                
+    
+                &:nth-child(1){
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+                &:nth-child(2){
+                    font-size: 40px;
+                    font-weight: bolder;
+                    color: yellow;
+                }
+                &:last-child{
+                    width: auto;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+        img{
+            height: 150px;
+        }
+    }
     .auth{
         justify-content: center;
         flex-direction: column;

@@ -47,3 +47,28 @@
     }
 
 }
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+}  
+@media screen and (max-width: 767px) {
+    .funders{
+
+        .funders_grid{
+            margin: 30px 0;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+
+            .funder{
+                padding: 15px;
+
+                
+                .funder_head{
+                
+                    img{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

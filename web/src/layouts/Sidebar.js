@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome, faEnvelope, faMessage, faGears, faProjectDiagram, faDrawPolygon } from '@fortawesome/free-solid-svg-icons'
+import { sideBar } from '../contexts/SidebarContext'
 
 
 const Sidebar = () => {
+    const { isOpen, setIsOpen } = useContext(sideBar)
 
     const menuItems = [
         {
@@ -40,16 +42,16 @@ const Sidebar = () => {
     ]
 
   return (
-    <div className='sidebar'>
+    <div className={`sidebar ${isOpen ? "sidebar_open": ""}`}>
         <div className="logo">LOGO</div>
         <ul>
             {
                 menuItems.map((item, index) => {
-                    return <NavLink key={index} to={item.link} ><li> <span>{item.icon}</span> {item.name} </li></NavLink>
+                    return <NavLink key={index} to={item.link} ><li onClick={() => setIsOpen(!isOpen)}> <span>{item.icon}</span> {item.name} </li></NavLink>
                 })
             }
         </ul>
-        <Link to="/login" ><button>Sign Out</button></Link>
+        <Link to="/login" ><button onClick={() => setIsOpen(!isOpen)}>Sign Out</button></Link>
     </div>
   )
 }

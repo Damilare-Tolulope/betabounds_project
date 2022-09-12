@@ -6,7 +6,7 @@ const Forum = () => {
   return (
     <div className='forum'>
       <ChatLists />
-      <Chat />
+      {window.innerWidth > 1024 && <Chat />}
     </div>
   )
 }

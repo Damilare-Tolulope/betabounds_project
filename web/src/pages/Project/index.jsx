@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import ProjectTaskField from './components/ProjectTaskField'
 import SingleProject from './SingleProject'
 
 const Project = () => {

@@ -140,11 +140,19 @@ a{
             }
             .layout_content{
                 margin: 100px 0;
-                padding: 0;
+                padding: 0 20px;
             }
           }
           .sidebar{
-            display: none;
+            z-index: 200;
+            width: 250px;
+            margin-left: -250px;
+            box-shadow: #000;
+            transition: all 0.3s linear;
+        }
+        .sidebar_open{
+            margin-left: 0px;
+            transition: all 0.3s linear;
           }
     }
   }
